@@ -1,0 +1,35 @@
+/* Our jobs */
+.job-list {
+  display: flex;
+}
+.job-list > .item {
+  position: relative;
+  width: 370px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.job-list .item + .item {
+  margin-left: 30px;
+}
+.job-list img {
+  display: block;
+}
+.job-list .title {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  padding: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
