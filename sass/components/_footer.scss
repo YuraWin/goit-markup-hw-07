@@ -5,6 +5,16 @@
 
   background-color: #2f303a;
   color: #ffffff;
+
+  .title {
+    display: inline-block;
+    margin-bottom: 21px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
 }
 /* Logo footer*/
 .underside-container {
@@ -16,44 +26,35 @@
 }
 .logo-container {
   min-width: 180px;
+
+  .logo {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #ffffff;
+  }
+  address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .location {
+    margin-bottom: 9px;
+  }
+
+  .mailtel {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .tel {
+    margin-bottom: 9px;
+  }
 }
 
 /* Setting soclink for footer */
 .footersoclink {
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
-}
-
-.underside .logo {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 22px;
-  color: #ffffff;
-}
-.underside address {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.underside .location {
-  margin-bottom: 9px;
-}
-.underside .tel {
-  margin-bottom: 9px;
-}
-.underside .mailtel {
-  color: rgba(255, 255, 255, 0.6);
-}
-.underside .title {
-  display: inline-block;
-  margin-bottom: 21px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
 }
 /* Блок подписки */
 .subscribe-container {
@@ -62,10 +63,12 @@
 }
 .subscribe-button {
   display: flex;
+
+  .item + .item {
+    margin-left: 12px;
+  }
 }
-.subscribe-button .item + .item {
-  margin-left: 12px;
-}
+
 .subscribe-input {
   width: 358px;
   height: 50px;
@@ -80,17 +83,19 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   outline: 0px;
+
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+  &::placeholder {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+  }
 }
-.subscribe-input:focus {
-  border: 1px solid $accent-color;
-}
-.subscribe-input::placeholder {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-}
+
 .subscribe-submit {
   display: flex;
   justify-content: center;

@@ -46,9 +46,10 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
-}
-.soclink > .item:not(:last-child) {
-  margin-right: 10px;
+
+  .item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .soclink-iconset {
   display: flex;
@@ -61,11 +62,12 @@ a {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.soclink-iconset:hover,
-.soclink-iconset:focus {
-  background-color: $accent-color;
-  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: #ffffff;
+  }
 }
 .soclink-icon {
   width: 20px;
